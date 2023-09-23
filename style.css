@@ -1,0 +1,278 @@
+/*Author: Gracjan Zalewski*/
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/*NAVIGATION*/
+#nav-container {
+  background-color: #7d533e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+#nav-container ul li {
+  float: left;
+  list-style: none;
+}
+#nav-container ul li a:visited,
+#nav-container ul li a:link {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-container ul li:first-child {
+  padding-right: 10%;
+}
+
+nav h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 4.8rem;
+  margin: 0;
+}
+#right-nav,
+#left-nav {
+  width: 14rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+/*First section*/
+#main-section-container {
+  background-image: url(images/house-1142297_1920.png);
+  background-size: cover;
+  width: 100%;
+  height: 980px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 8vw;
+}
+#smaller-main-text {
+  font-size: 5vw;
+}
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+#cta-button {
+  background-color: #4d230d;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding: 1.5% 3%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#cta-button:hover {
+  color: #7d533e;
+}
+#cta-button:active {
+  background-color: #6b3f2a;
+}
+
+/*SECOND SECTION*/
+h4 {
+  font-size: 2.5vw;
+  font-family: "Roboto Slab", serif;
+  margin: 1% 0;
+}
+.why-us {
+  font-weight: bold;
+  font-size: 2vw;
+  font-family: "Roboto Slab", serif;
+}
+.second-section-text {
+  font-size: 1.6vw;
+}
+#second-section-container {
+  background-color: rgba(125, 83, 62, 1);
+  background-image: linear-gradient(
+    180deg,
+    rgba(125, 83, 62, 1) 0%,
+    rgba(125, 83, 62, 1) 95%,
+    rgba(255, 255, 255, 1) 11%
+  );
+  color: white;
+}
+.second-section-content {
+  float: left;
+}
+.headers {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  font-size: 4.8rem;
+}
+.second-section-text-background {
+  background-color: #d0a58f;
+  width: 35vw;
+  height: 30vw;
+  padding: 20px;
+}
+.second-section-images {
+  width: 35vw;
+  height: 32.1vw;
+  margin: 0% 5%;
+}
+#first-offer-container {
+  display: flex;
+  float: left;
+  
+}
+#second-offer-container {
+  display: flex;
+  float: left;
+}
+#offer-content {
+  display: flex;
+}
+#offer-container {
+  margin-left: 12%;
+}
+#upper-offer-container {
+  margin-bottom: 5%;
+}
+.price{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+/*Third section*/
+/* Add this CSS to your existing stylesheet */
+#price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  width: 60%;
+}
+
+.inputs {
+  width: 200%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2vw;
+  font-size: 16px;
+  border: #7d533e solid 0.3vw;
+}
+
+textarea {
+  resize: none;
+  font-family: "Roboto Slab", serif;
+}
+
+#submit-button {
+  background-color: white;
+  color: #7d533e;
+  font-family: "Roboto Slab", serif;
+  border: #7d533e solid 0.3vw;
+  padding: 10px;
+  width: 50%;
+  border-radius: 2vw;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#names-container {
+  display: flex;
+}
+.brown-headers {
+  color: #7d533e;
+  margin: 1% 0;
+}
+
+/* About us*/
+
+#about-us-container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+#about-us-container div,
+#about-us-container div img {
+  width: 40vw;
+  height: 30vw;
+}
+.about-us-text {
+  background-color: #d0a58f;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: normal;
+ 
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/*Contact*/
+
+#line{
+    width: 3px;
+    height: 25vh;
+    background-color: #7d533e;
+}
+#contact-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+.contact-element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #d0a58f;
+    width: 10%;
+    
+}
+.contact-text{
+    font-size: 1.1vw;
+    
+}
+
+/*Footer*/
+#footer-container{
+  background: #7D533E ;   /* fallback for old browsers */
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  padding: 1% 0;
+  margin-top: 5%;
+}
+#footer-container div ul{
+  list-style: none;
+}
+#copyright{
+  background-color: #906B59;
+  padding: 1% 0;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+#newsletter-button{
+  color: #FFF;
+  font-family: "Roboto Slab", serif;
+  background: #D0A58F;
+  border: none;
+  font-size: 1vw;
+}
+#newsletter-container{
+  margin: 1% 0;
+  line-height: 1.7vw;
+}
