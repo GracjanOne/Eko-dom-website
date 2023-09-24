@@ -105,6 +105,7 @@ h4 {
     rgba(255, 255, 255, 1) 11%
   );
   color: white;
+
 }
 .second-section-content {
   float: left;
@@ -151,17 +152,16 @@ h4 {
 }
 
 /*Third section*/
-/* Add this CSS to your existing stylesheet */
 #price-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2vw;
-  width: 60%;
+  
 }
 
 .inputs {
-  width: 200%;
+  width: 50vw;
   margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
@@ -186,9 +186,21 @@ textarea {
   font-size: 16px;
   cursor: pointer;
 }
-
+#center{
+  display: flex;
+  justify-content: center;
+}
 #names-container {
   display: flex;
+
+
+}
+.names{
+  width: 23vw;
+  
+}
+#first-name{
+  margin-right: 2vw;
 }
 .brown-headers {
   color: #7d533e;
@@ -230,19 +242,22 @@ textarea {
 #contact-container{
     display: flex;
     justify-content: space-around;
-    margin: 0 5%;
+    margin: 0 10%;
 }
 .contact-element{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #d0a58f;
-    width: 10%;
-    
+    display: grid;
+
+
+}
+.contact-element img{
+  margin-left: 28% !important;
+  margin-bottom: 5%;
+  width: 8vw;
 }
 .contact-text{
-    font-size: 1.1vw;
-    
+    font-size: 2vw;
+    color: #d0a58f; 
+    text-align: center;
 }
 
 /*Footer*/
