@@ -7,6 +7,9 @@ body {
   padding: 0;
 }
 /*NAVIGATION*/
+#burger-menu{
+  display: none;
+}
 #nav-container {
   background-color: #7d533e;
   display: flex;
@@ -31,7 +34,7 @@ body {
 
 nav h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 4.8rem;
+  font-size: 4.8vw;
   margin: 0;
 }
 #right-nav,
@@ -86,7 +89,7 @@ nav h1 {
 h4 {
   font-size: 2.5vw;
   font-family: "Roboto Slab", serif;
-  margin: 1% 0;
+  margin: 1vw 0;
 }
 .why-us {
   font-weight: bold;
@@ -121,7 +124,7 @@ h4 {
   background-color: #d0a58f;
   width: 35vw;
   height: 30vw;
-  padding: 20px;
+  padding: 1vw;
 }
 .second-section-images {
   width: 35vw;
@@ -291,4 +294,97 @@ textarea {
   margin: 1% 0;
   line-height: 1.7vw;
 }
-/*RESPONSIVE NAV*/
+
+@media only screen and (max-width : 700px) {
+  /*RESPONSIVE NAV*/
+#burger-menu{
+  display: block;
+}
+#left-nav{
+  display: none;
+}
+#right-nav{
+  display: none;
+}
+h1{
+    margin-left: 30% !important;
+    font-size: 8vw !important;
+}
+/*Responsive first section*/
+#main-section-container{
+  background-position: 30%;
+}
+/*Responsive second section*/
+.price{
+  font-size: 2vw;
+}
+.why-us{
+  font-size: 3vw;
+}
+
+.second-section-text{
+  font-size: 3.5vw;
+  
+}
+.second-section-images {
+  width: 82.4%;
+  height: auto;
+  margin: 0% 0%;
+}
+#first-offer-container, #second-offer-container {
+  display: block;
+  float: none;
+  
+}
+.second-section-text-background{
+  width: 80%;
+  height: auto;
+}
+/*RESPONSIVE About us*/
+#about-us-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+.text p, .text ul{
+  font-size: 3vw;
+}
+.about-us-text{
+  height: auto !important;
+  width: 80vw !important;
+}
+#about-us-container div{
+  height: 100%;
+}
+#about-us-container div img {
+  height: auto !important;
+  width: 80vw !important;
+  
+} 
+.about-us-image{
+  margin: -3% 0;
+}
+#first-image{
+  margin-bottom: 10%;
+}
+/*Responsive contact*/
+.contact-element{
+  grid-template-rows: 35% 25% 25%;
+  width: 50%;
+  margin-top: 8%;
+}
+.contact-text{
+  font-size: 3vw;
+}
+.contact-element img{
+  margin-left: 40% !important;
+}
+/*Responsive footer*/
+#footer-container{
+  flex-direction: column;
+}
+#newsletter-container{
+  margin-left: 8%;
+  
+}
+}
