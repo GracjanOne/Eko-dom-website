@@ -1,6 +1,9 @@
 /*Author: Gracjan Zalewski*/
+
+
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -9,6 +12,14 @@ body {
 /*NAVIGATION*/
 #burger-menu{
   display: none;
+  cursor: pointer;
+}
+#x{
+  position: absolute;
+  left: 80%;
+  display: none;
+  top: 5%;
+  cursor: pointer;
 }
 #nav-container {
   background-color: #7d533e;
@@ -17,6 +28,7 @@ body {
   align-items: center;
   width: 100%;
   color: white;
+  
 }
 #nav-container ul li {
   float: left;
@@ -26,6 +38,7 @@ body {
 #nav-container ul li a:link {
   color: white;
   text-decoration: none;
+  will-change: transform;
 }
 
 #nav-container ul li:first-child {
@@ -42,8 +55,13 @@ nav h1 {
   width: 14rem;
   font-size: 1.3rem;
   font-weight: bold;
+  will-change: transform;
 }
 /*First section*/
+#cta-button:link, #cta-button:link:visited{
+  color: white;
+  text-decoration: none;
+}
 #main-section-container {
   background-image: url(images/house-1142297_1920.png);
   background-size: cover;
@@ -86,10 +104,12 @@ nav h1 {
 }
 
 /*SECOND SECTION*/
+
 h4 {
   font-size: 2.5vw;
   font-family: "Roboto Slab", serif;
   margin: 1vw 0;
+  
 }
 .why-us {
   font-weight: bold;
@@ -108,7 +128,7 @@ h4 {
     rgba(255, 255, 255, 1) 11%
   );
   color: white;
-
+  margin-top: -5%;
 }
 .second-section-content {
   float: left;
@@ -165,7 +185,7 @@ h4 {
 
 .inputs {
   width: 50vw;
-  margin: 10px 0;
+  margin: 1vw 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 2vw;
@@ -272,9 +292,13 @@ textarea {
   font-family: "Roboto Slab", serif;
   padding: 1% 0;
   margin-top: 5%;
+  font-size: 1.3vw;
 }
 #footer-container div ul{
   list-style: none;
+}
+#email{
+  font-size: 1.3vw;
 }
 #copyright{
   background-color: #906B59;
@@ -282,20 +306,38 @@ textarea {
   text-align: center;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3vw;
 }
 #newsletter-button{
   color: #FFF;
   font-family: "Roboto Slab", serif;
   background: #D0A58F;
   border: none;
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 #newsletter-container{
   margin: 1% 0;
   line-height: 1.7vw;
+ 
 }
 
+
+@media only screen and (max-width : 850px){
+  .text p, .text ul{
+    font-size: 1.4vw;
+  }
+  #footer-container{
+    font-size: 1.9vw;
+  }
+  .names{
+    width: 22vw;
+  }
+  .inputs{
+    font-size: 2vw;
+  }
+}
 @media only screen and (max-width : 700px) {
+
   /*RESPONSIVE NAV*/
 #burger-menu{
   display: block;
@@ -310,10 +352,16 @@ h1{
     margin-left: 30% !important;
     font-size: 8vw !important;
 }
+#nav-container{
+  
+  position: absolute;
+}
 /*Responsive first section*/
 #main-section-container{
   background-position: 30%;
+  height: 700px;
 }
+
 /*Responsive second section*/
 .price{
   font-size: 2vw;
@@ -387,4 +435,34 @@ h1{
   margin-left: 8%;
   
 }
+}
+@media only screen and (max-width : 500px){
+  #footer-container{
+    font-size: 2.1vw;
+  }
+}
+
+/*Animations*/
+@keyframes responsiveMenu {
+  from{
+    height: 20vw;
+  }
+  50%{
+    height: 30vw;
+  }
+
+  to{
+    height: 30vw;
+  }
+}
+@keyframes closeMenu {
+  from{
+    height: 30vw;
+  }
+  50%{
+    height: 25vw;
+  }
+  to{
+    height: auto;
+  }
 }

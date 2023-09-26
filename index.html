@@ -12,24 +12,32 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav>
       <div id="nav-container">
+        <a id="x" href="">
+          <svg >
+            <line x1="9" y1="9" x2="27" y2="27" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="9" y1="27" x2="27" y2="9" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
         <ul id="left-nav">
-          <li><a href="">OFERTA</a></li>
-          <li><a href="">WYCENA</a></li>
+          <li><a href="#offer">OFERTA</a></li>
+          <li><a href="#price">WYCENA</a></li>
         </ul>
         
           <h1>EKO-DOM</h1>
         
         <ul id="right-nav">
-          <li><a href="">O NAS</a></li>
-          <li><a href="">KONTAKT</a></li>
+          <li><a href="#about-us">O NAS</a></li>
+          <li><a href="#contact">KONTAKT</a></li>
         </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" id="burger-menu" width="60" height="60" viewBox="0 0 36 36" fill="none">
+        <svg  xmlns="http://www.w3.org/2000/svg" id="burger-menu" width="60" height="60" viewBox="0 0 36 36" fill="none">
           <path d="M9 12H27M9 18H27M9 24H27" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
+     
       </div>
     </nav>
     <section>
@@ -40,14 +48,14 @@
             DREWNIANEGO DOMU
           </h2>
           <div id="button-container">
-            <button id="cta-button">ZOBACZ OFERTĘ</button>
+            <a href="#offer" id="cta-button">ZOBACZ OFERTĘ</a>
           </div>
         </div>
       </div>
     </section>
     <section>
       <div id="second-section-container">
-        <h3 class="headers">OFERTA</h3>
+        <h3 id="offer" class="headers">OFERTA</h3>
         <div id="offer-container">
           <div >
             <div id="upper-offer-container">
@@ -104,7 +112,7 @@
       </div>
     </section>
     <section>
-      <h6 class="headers brown-headers">BEZPŁATNA WYCENA</h6>
+      <h6 id="price" class="headers brown-headers">BEZPŁATNA WYCENA</h6>
       <form action="">
         <div id="price-container">
           <div>
@@ -131,7 +139,7 @@
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  
                   placeholder="Adres e-mail"
                   class="inputs"
                   required
@@ -161,7 +169,7 @@
     </section>
     
     <section>
-      <h6 class="headers brown-headers">O NAS</h6>
+      <h6 id="about-us" class="headers brown-headers">O NAS</h6>
       <div class="flex">
         <div id="about-us-container">
         
@@ -187,7 +195,7 @@
               <span class="text">
                 <p style="padding: 20px 40px;">
                   <b>Dlaczego Wybierać EKO-DOM:</b>
-                  <ul style="padding: 20px 40px;">
+                  <ul >
                     <li>
                       Ekologiczność: Stawiamy na ekologiczne materiały budowlane i
                       dbamy o minimalny wpływ na środowisko.
@@ -214,7 +222,7 @@
       </div>
     </section>
     <section>
-      <h6 class="headers brown-headers">KONTAKT</h6>
+      <h6 id="contact" class="headers brown-headers">KONTAKT</h6>
       <div id="contact-container">
         <div class="contact-element">
           <img  src="images/telephone (1).png" alt="kontakt" /> 
@@ -232,9 +240,10 @@
     <footer>
       <div id="footer-container">
         <div id="newsletter-container">
-          <span>Zapisz się do bezpłatnego newslettera</span>
-          <form action="">
-            <input type="email" name="" id="" placeholder="e-mail" /> <br>
+          
+          <form action=""> 
+            <span id="newsletter-info">Zapisz się do bezpłatnego newslettera</span><br>
+            <input type="email" name="" id="email" placeholder="e-mail" /> <br>
             <input id="newsletter-button" type="submit" value="Zapisz się" />
           </form>
         </div>
